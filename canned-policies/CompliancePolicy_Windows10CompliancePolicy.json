@@ -1,0 +1,56 @@
+{
+	"activeFirewallRequired": false,
+	"antiSpywareRequired": false,
+	"antivirusRequired": false,
+	"bitLockerEnabled": true,
+	"codeIntegrityEnabled": false,
+	"configurationManagerComplianceRequired": false,
+	"defenderEnabled": false,
+	"deviceThreatProtectionEnabled": true,
+	"deviceThreatProtectionRequiredSecurityLevel": "secured",
+	"earlyLaunchAntiMalwareDriverEnabled": false,
+	"osMaximumVersion": "34.4.4.4",
+	"osMinimumVersion": "2.2.2.2",
+	"passwordBlockSimple": false,
+	"passwordRequired": false,
+	"passwordRequiredToUnlockFromIdle": false,
+	"passwordRequiredType": "deviceDefault",
+	"requireHealthyDeviceReport": false,
+	"rtpEnabled": false,
+	"secureBootEnabled": true,
+	"signatureOutOfDate": false,
+	"storageRequireEncryption": false,
+	"tpmRequired": false,
+	"validOperatingSystemBuildRanges": [],
+	"createdDateTime": "2022-10-13T15:24:59.6388266+00:00",
+	"description": "1!!!",
+	"displayName": "2 - Device compliance policy (COMPLIANCE POLICIES AND CONFIGURATION PROFILES)",
+	"lastModifiedDateTime": "2023-01-09T14:15:27.3455396+00:00",
+	"version": 11,
+	"scheduledActionsForRule": [
+		{
+			"scheduledActionConfigurations": [
+				{
+					"actionType": "block",
+					"gracePeriodHours": 0,
+					"notificationMessageCCList": [],
+					"notificationTemplateId": "00000000-0000-0000-0000-000000000000"
+				},
+				{
+					"actionType": "notification",
+					"gracePeriodHours": 48,
+					"notificationMessageCCList": [],
+					"notificationTemplateId": "0a4f904d-c71e-4916-9bc2-d8d50e93b253"
+				},
+				{
+					"actionType": "retire",
+					"gracePeriodHours": 48,
+					"notificationMessageCCList": [],
+					"notificationTemplateId": "00000000-0000-0000-0000-000000000000"
+				}
+			]
+		}
+	],
+	"@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+	"@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceCompliancePolicies(assignments(),scheduledActionsForRule(scheduledActionConfigurations()))/$entity"
+}

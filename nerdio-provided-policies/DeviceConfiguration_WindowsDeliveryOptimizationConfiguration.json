@@ -20,7 +20,7 @@
 	"createdDateTime": "2022-10-13T15:21:40.3786611+00:00",
 	"description": "",
 	"displayName": "3 - Device configuration 2 (COMPLIANCE POLICIES AND CONFIGURATION PROFILES)",
-	"lastModifiedDateTime": "2022-12-21T17:27:47.0142765+00:00",
+	"lastModifiedDateTime": "2022-12-21T17:27:47.0142745+00:00",
 	"id": "75493eff-a21d-467a-b230-19406fd38bac",
 	"@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
 	"@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations(assignments())/$entity",

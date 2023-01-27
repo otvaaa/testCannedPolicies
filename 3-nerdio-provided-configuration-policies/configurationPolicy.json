@@ -1,5 +1,5 @@
 {
-	"displayName": "Configuration policy",
+	"displayName": "Configuration policy - CHANGED",
 	"lastModifiedDateTime": "2023-01-09T14:15:27.3455396+00:00",
 	"@odata.type": "#microsoft.graph.windows10CompliancePolicy",
 }

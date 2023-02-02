@@ -1,5 +1,5 @@
 {
-	"backgroundDownloadFromHttpDelayInSeconds": 2,
+	"backgroundDownloadFromHttpDelayInSeconds": 3,
 	"bandwidthMode": {
 		"maximumDownloadBandwidthInKilobytesPerSecond": 88,
 		"maximumUploadBandwidthInKilobytesPerSecond": 99,

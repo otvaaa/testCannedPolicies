@@ -1,5 +1,60 @@
 {
-	"displayName": "Security baseline policy2",
-	"lastModifiedDateTime": "2023-01-09T14:15:27.3455396+00:00",
-	"@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+    "templateId": "d1174162-1dd2-4976-affc-6667049ab0ae",
+    "description": null,
+    "displayName": "NMM Force Bitlocker for fixed disks only",
+    "settings": [
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementBooleanSettingInstance",
+            "id": "709220e9-add9-47d5-86f2-d58abb91ffa4",
+            "definitionId": "deviceConfiguration--windows10EndpointProtectionConfiguration_bitLockerEncryptDevice",
+            "valueJson": "true",
+            "value": true
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementBooleanSettingInstance",
+            "id": "cb8e0c69-8d41-4d08-895a-ca5f07da5c13",
+            "definitionId": "deviceConfiguration--windows10EndpointProtectionConfiguration_bitLockerEnableStorageCardEncryptionOnMobile",
+            "valueJson": "false",
+            "value": false
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementBooleanSettingInstance",
+            "id": "d117cc09-3067-4c01-af95-536543e1d345",
+            "definitionId": "deviceConfiguration--windows10EndpointProtectionConfiguration_bitLockerDisableWarningForOtherDiskEncryption",
+            "valueJson": "true",
+            "value": true
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementBooleanSettingInstance",
+            "id": "f3221f6b-19f2-4894-be4d-c2b0554f4b49",
+            "definitionId": "deviceConfiguration--windows10EndpointProtectionConfiguration_bitLockerAllowStandardUserEncryption",
+            "valueJson": "true",
+            "value": true
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementStringSettingInstance",
+            "id": "f1aec202-cec6-4713-b4f6-3083d053c6cc",
+            "definitionId": "deviceConfiguration--windows10EndpointProtectionConfiguration_bitLockerRecoveryPasswordRotation",
+            "valueJson": "\"enabledForAzureAdAndHybrid\"",
+            "value": "enabledForAzureAdAndHybrid"
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementComplexSettingInstance",
+            "id": "aa2c7940-39ae-4bc9-973d-82df93c8c93d",
+            "definitionId": "deviceConfiguration--windows10EndpointProtectionConfiguration_bitLockerSystemDrivePolicy",
+            "valueJson": "{\"startupAuthenticationRequired\":true,\"startupAuthenticationTpmUsage\":\"allowed\",\"startupAuthenticationTpmPinUsage\":\"allowed\",\"startupAuthenticationTpmKeyUsage\":\"required\",\"startupAuthenticationTpmPinAndKeyUsage\":\"allowed\",\"startupAuthenticationBlockWithoutTpmChip\":true,\"prebootRecoveryEnableMessageAndUrl\":false,\"prebootRecoveryMessage\":null,\"prebootRecoveryUrl\":null,\"recoveryOptions\":null,\"encryptionMethod\":\"xtsAes128\",\"minimumPinLength\":null}"
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementComplexSettingInstance",
+            "id": "a51eca3f-f9fb-49d7-96d2-b161daf5d040",
+            "definitionId": "deviceConfiguration--windows10EndpointProtectionConfiguration_bitLockerFixedDrivePolicy",
+            "valueJson": "{\"recoveryOptions\":{\"recoveryKeyUsage\":\"blocked\",\"recoveryInformationToStore\":\"passwordAndKey\",\"enableRecoveryInformationSaveToStore\":true,\"recoveryPasswordUsage\":\"blocked\",\"hideRecoveryOptions\":true,\"enableBitLockerAfterRecoveryInformationToStore\":false,\"blockDataRecoveryAgent\":false},\"requireEncryptionForWriteAccess\":true,\"encryptionMethod\":\"xtsAes128\"}"
+        },
+        {
+            "@odata.type": "#microsoft.graph.deviceManagementComplexSettingInstance",
+            "id": "54ea9798-2911-4f24-a308-b9ba38903311",
+            "definitionId": "deviceConfiguration--windows10EndpointProtectionConfiguration_bitLockerRemovableDrivePolicy",
+            "valueJson": "{\"encryptionMethod\":\"xtsAes128\",\"requireEncryptionForWriteAccess\":false,\"blockCrossOrganizationWriteAccess\":false}"
+        }
+    ]
 }
